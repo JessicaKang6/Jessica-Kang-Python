@@ -1,5 +1,5 @@
 def spaced(s):
-    text = " 01HelloWorld                                 |\n|   Name: Jessica Kang                           |\n|   Version : 01                               "
+    text = " 02GoodbyeWorld                               |\n|   Name: Jessica Kang                           |\n|   Version : 01                               "
     textLength = len(text)
     lineLength = textLength - 96
     height = 5
