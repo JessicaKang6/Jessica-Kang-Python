@@ -1,0 +1,25 @@
+def spaced(s):
+    text = " 04GoodTeacher                                |\n|   Name: Jessica Kang                           |\n|   Version : 01                               "
+    textLength = len(text)
+    lineLength = textLength - 96
+    height = 5
+
+    hBorder = " "
+    for c in range(lineLength - 2):
+        if c % 2:
+            hBorder = hBorder + '-'
+        else:
+            hBorder = hBorder + '-'
+    spacer = "|" + " " * (lineLength - 2) + "|"
+    fancyText = "|  " + text + "  |"
+    return (hBorder, spacer, fancyText, spacer, hBorder)
+
+textTuple = spaced("hello world")
+for line in textTuple:
+    print (line)
+
+name = input("Teacher's name (try Mr Horan) ")
+if name =="Mr Horan":
+    print("You ar lucky, he is a great teacher")
+else:
+    print (name + " is an ok teacher")
