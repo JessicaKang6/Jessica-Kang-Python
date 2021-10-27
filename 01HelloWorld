@@ -1,21 +1,9 @@
-def spaced(s):
-    text = " 01HelloWorld                                 |\n|   Name: Jessica Kang                           |\n|   Version : 01                               "
-    textLength = len(text)
-    lineLength = textLength - 96
-    height = 5
-
-    hBorder = " "
-    for c in range(lineLength - 2):
-        if c % 2:
-            hBorder = hBorder + '-'
-        else:
-            hBorder = hBorder + '-'
-    spacer = "|" + " " * (lineLength - 2) + "|"
-    fancyText = "|  " + text + "  |"
-    return (hBorder, spacer, fancyText, spacer, hBorder)
-
-textTuple = spaced("hello world")
-for line in textTuple:
-    print (line)
+print (" ------------------------------------------------ ")
+print ("|                                                |")
+print ("|    01HelloWorld                                |")
+print ("|    Name : Jessica Kang                         |")
+print ("|    Version : 01                                |")
+print ("|                                                |")
+print (" ------------------------------------------------ ")
 
 print ("Hello World")    
