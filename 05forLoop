@@ -1,0 +1,10 @@
+print (" ------------------------------------------------ ")
+print ("|                                                |")
+print ("|    05forLoop                                   |")
+print ("|    Name : Jessica Kang                         |")
+print ("|    Version : 01                                |")
+print ("|                                                |")
+print (" ------------------------------------------------ ")
+
+for x in range(500):
+  print(x) 
