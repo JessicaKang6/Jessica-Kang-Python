@@ -1,0 +1,15 @@
+print (" ------------------------------------------------ ")
+print ("|                                                |")
+print ("|    06whileLoop                                 |")
+print ("|    Name : Jessica Kang                         |")
+print ("|    Version : 01                                |")
+print ("|                                                |")
+print (" ------------------------------------------------ ")
+
+
+subject = input("What is the name of this subject ")
+while subject != "IST":
+    print("Not Correct - try again")
+    subject = input("What is the name of this subject ")
+if subject == "IST":
+    print ("\n\nCongratulations!!\n\n")
