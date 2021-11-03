@@ -1,3 +1,10 @@
+from os import system, name
+def clrscr():
+    if name == 'nt':
+        _ = system('cls')
+    else:
+        _ = system('clear') 
+
 def print_menu():
     print (" ------------------------------------------------ ")
     print ("|                                                |")
@@ -6,6 +13,8 @@ def print_menu():
     print ("|    Version : 01                                |")
     print ("|                                                |")
     print (" ------------------------------------------------\n ")
+
+def print_options():
     print ('1. Hello World')
     print ('2. Goodbye World')
     print ('3. Goodbye Person')
@@ -22,7 +31,6 @@ def HelloWorld():
      print('\nHello World')
      print('\n----End of Output -----------------------------')
      input('\n\n\nPress enter to continue')
-     print_menu.clear()
 
 def GoodbyeWorld():
      print('----Start of Output ---------------------------\n')
@@ -73,12 +81,13 @@ def ToExit():
     print('\n----End of Output -----------------------------')
     input('\n\n\nPress enter to continue')
 
+print_menu()
 if __name__=='__main__':
     while(True):
-        print_menu()
+        print_options()
         option = (input('Enter an option '))
         if option == '1':
-           HelloWorld()
+            HelloWorld()
         elif option == '2':
             GoodbyeWorld()
         elif option == '3':
@@ -97,3 +106,5 @@ if __name__=='__main__':
           print('\ninvalid option\n')
           print('----End of Output -----------------------------')
           input('\n\n\nPress enter to continue')
+        clrscr()
+ 
