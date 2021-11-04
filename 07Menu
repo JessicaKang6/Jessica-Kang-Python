@@ -1,9 +1,6 @@
-from os import system, name
+import os
 def clrscr():
-    if name == 'nt':
-        _ = system('cls')
-    else:
-        _ = system('clear') 
+ os.system('cls')
 
 def print_menu():
     print (" ------------------------------------------------ ")
@@ -76,28 +73,46 @@ def whileLoop():
     print('\n----End of Output -----------------------------')
     input('\n\n\nPress enter to continue')
 
+def stringLoop():
+    print('----Start of Output ---------------------------\n')
+    string = input("What is your string? ")
+    for letter in string:
+     print(letter) 
+    print('\n----End of Output -----------------------------')
+    input('\n\n\nPress enter to continue')
+
 def ToExit():
     print('----Start of Output ---------------------------\n')
     print('\n----End of Output -----------------------------')
     input('\n\n\nPress enter to continue')
 
-print_menu()
+
 if __name__=='__main__':
     while(True):
+        print_menu()
         print_options()
         option = (input('Enter an option '))
         if option == '1':
             HelloWorld()
+            clrscr()
         elif option == '2':
             GoodbyeWorld()
+            clrscr()
         elif option == '3':
             GoodbyePerson()
+            clrscr()
         elif option == '4':
             GoodTeacher()
+            clrscr()
         elif option == '5':
             forLoop() 
+            clrscr()
         elif option == '6':
             whileLoop()
+            clrscr()
+        elif option == '7':
+            stringLoop()
+            clrscr()
         elif option == 'x' :
             ToExit()
             break
@@ -106,5 +121,6 @@ if __name__=='__main__':
           print('\ninvalid option\n')
           print('----End of Output -----------------------------')
           input('\n\n\nPress enter to continue')
-        clrscr()
+          clrscr()
+ 
  
